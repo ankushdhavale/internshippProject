@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md navbar-expand-sm bg-body-light border-bottom mb-4 sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-dark" href="/"><b>IT's MAGIC</b></a>
+      <button class="navbar-toggler text-primary" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNavAltMarkup" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse opacity-0.7 navBar " id="navbarNavAltMarkup">
+           <div class="d-flex navbar-nav">
+            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="/listings">Internship</a>
+           </div>
+          <div class="navbar-nav ms-auto">
+            <div class="navbar-nav ">
+            <a class="nav-link" href="/listings/new">Creating New Internship</a>
+              <% if(!currUser) { %>
+                <a class="nav-link " href="/signup">Signup</a>
+               <% } %>    
+               <% if(currUser) { %>
+               <a class="nav-link" href="/logout">logout</a>
+               <span class="nav-link" ><%=currUser.username%></span>
+               <% } %>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </nav>
+ 

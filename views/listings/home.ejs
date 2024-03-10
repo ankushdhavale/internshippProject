@@ -1,0 +1,116 @@
+<style>
+    body{
+    color: white;
+     font-family: sans-serif;
+    }
+.home{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: rgb(10, 136, 238);
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    border: 0px;
+}
+button:hover{
+    background-color: rgb(29, 8, 98);
+}
+
+.apply{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 2rem;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    margin-left: 20rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+  }
+  
+  .heading-shine{
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+  p{
+    font-size: 2rem;
+  }
+
+  b{
+    margin-right: 10px;
+  }
+
+  button{
+    margin-left: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    div.apply {
+      margin-right: 20rem;
+    }
+    button{
+      padding: 4px 30px;
+    }
+    p{
+      margin: auto;
+      width: 30rem;
+      font-size: 20px;
+    }
+    .heading-shine{
+      margin:20rem 0px;
+      align-items: center;
+      text-align: center;
+      width: 30rem;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+  }
+</style>
+<title>It's Magic</title>
+<form method="GET" action="/listings" novalidate class="needs-validation">
+    <div class="home">
+        <h1 class="heading-shine">Apply The Intrenship</h1>
+        <p>Let’s grow together where opportunities are limitless</p>
+        <div class="apply">
+            <div><b>Apply</b></div>
+            <div><button>Get Started</button></div>
+        </div>
+    </div>
+</form>
